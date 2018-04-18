@@ -3,3 +3,11 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+@mixin main-title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  color: #111111;
+}

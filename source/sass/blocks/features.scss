@@ -74,19 +74,19 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $font-oswald;
   text-transform: uppercase;
   color: #111111;
 }
 
 .features__description {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   padding-bottom: 22px;
 
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-family: $font-arial;
   color: #444444;
 
   border-bottom: $border-bottom;
@@ -100,4 +100,9 @@
   color: #111111;
 
   background-color: transparent;
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 96px;
+  background-size: 24px 11px;
 }
