@@ -1,12 +1,17 @@
+.promo {
+  margin-bottom: 22px;
+}
+
 .promo__wrapper {
-  @include align-center;
+  width: 320px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .promo__background {
   position: relative;
 
-  margin-bottom: 136px;
+  margin-bottom: 135px;
   padding-top: 30px;
   padding-bottom: 1px;
 
