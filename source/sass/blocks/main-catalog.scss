@@ -1,0 +1,6 @@
+.main-catalog__title {
+  @include align-mobile;
+  @include main-title;
+
+  border-bottom: $border-bottom;
+}
