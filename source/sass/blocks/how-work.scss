@@ -17,6 +17,78 @@
   position: relative;
 
   padding-left: 40px;
+
+  &--composition {
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -40px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: "";
+  }
+  }
+
+  &--shape {
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -40px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: "";
+  }
+  }
+
+  &--nutrition {
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -40px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: "";
+  }
+  }
+
+  &--time {
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -40px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: "";
+  }
+  }
 }
 
 .how-work__description {
@@ -27,68 +99,4 @@
   font-weight: 400;
   font-family: $font-arial;
   color: #444444;
-}
-
-.how-work__item--composition::before {
-  position: absolute;
-  top: -2px;
-  left: -40px;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: #68b738;
-  background-image: url("../../img/advantage-leaf@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  content: "";
-}
-
-.how-work__item--shape::before {
-  position: absolute;
-  top: -2px;
-  left: -40px;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: #68b738;
-  background-image: url("../../img/advantage-powder@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  content: "";
-}
-
-.how-work__item--nutrition::before {
-  position: absolute;
-  top: -2px;
-  left: -40px;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: #68b738;
-  background-image: url("../../img/advantage-dining@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  content: "";
-}
-
-.how-work__item--time::before {
-  position: absolute;
-  top: -2px;
-  left: -40px;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: #68b738;
-  background-image: url("../../img/advantage-clock@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  content: "";
 }

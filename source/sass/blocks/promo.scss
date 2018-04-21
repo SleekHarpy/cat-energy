@@ -16,21 +16,21 @@
   padding-bottom: 1px;
 
   background-color: #65a93c;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-}
 
-.promo__background::before {
-  position: absolute;
-  top: 167px;
-  left: 20px;
+  &::before {
+    position: absolute;
+    top: 167px;
+    left: 20px;
 
-  width: 280px;
-  height: 271px;
+    width: 280px;
+    height: 271px;
 
-  background-image: url("../../img/index-can-mobile@1x.png");
+    background-image: url("../img/index-can-mobile@1x.png");
 
-  content: "";
+    content: "";
+  }
 }
 
 .promo__title {

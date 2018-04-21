@@ -8,63 +8,65 @@
   margin-bottom: 20px;
   padding: 10px 20px;
 
-  background-color: #f2f2f2;
-}
+  background-color: $main-background;
 
-.features__item--losing-weight::after {
-  position: absolute;
-  top: 22px;
-  left: 30px;
+  &--losing-weight {
+  &::after {
+    position: absolute;
+    top: 22px;
+    left: 30px;
 
-  width: 35px;
-  height: 50px;
+    width: 35px;
+    height: 50px;
 
-  background-image: url("../../img/icon-cat-slim.svg");
-  background-repeat: no-repeat;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
 
-  content: "";
-}
+    content: "";
+  }
+  &::before {
+    position: absolute;
+    top: 24px;
+    left: 22px;
 
-.features__item--losing-weight::before {
-  position: absolute;
-  top: 24px;
-  left: 22px;
+    width: 50px;
+    height: 50px;
 
-  width: 50px;
-  height: 50px;
+    background-color: $secondary-bacground;
+    border-radius: 50%;
 
-  background-color: #68b738;
-  border-radius: 50%;
+    content: "";
+  }
+  }
 
-  content: "";
-}
+  &--mass {
+  &::after {
+    position: absolute;
+    top: 35px;
+    left: 13px;
 
-.features__item--mass::after {
-  position: absolute;
-  top: 35px;
-  left: 13px;
+    width: 67px;
+    height: 28px;
 
-  width: 67px;
-  height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
 
-  background-image: url("../../img/icon-cat-pro.svg");
-  background-repeat: no-repeat;
+    content: "";
+  }
+  &::before {
+    position: absolute;
+    top: 24px;
+    left: 22px;
 
-  content: "";
-}
+    width: 50px;
+    height: 50px;
 
-.features__item--mass::before {
-  position: absolute;
-  top: 24px;
-  left: 22px;
+    background-color: $secondary-bacground;
+    border-radius: 50%;
 
-  width: 50px;
-  height: 50px;
-
-  background-color: #68b738;
-  border-radius: 50%;
-
-  content: "";
+    content: "";
+  }
+  }
 }
 
 .features__title {
@@ -100,7 +102,7 @@
   color: #111111;
 
   background-color: transparent;
-  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 96px;

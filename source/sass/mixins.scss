@@ -11,3 +11,10 @@
   font-family: $font-oswald;
   color: #111111;
 }
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
