@@ -11,61 +11,63 @@
   background-color: $main-background;
 
   &--losing-weight {
-  &::after {
-    position: absolute;
-    top: 22px;
-    left: 30px;
+    &::after {
+      position: absolute;
+      top: 22px;
+      left: 30px;
 
-    width: 35px;
-    height: 50px;
+      width: 35px;
+      height: 50px;
 
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
 
-    content: "";
-  }
-  &::before {
-    position: absolute;
-    top: 24px;
-    left: 22px;
+      content: "";
+    }
 
-    width: 50px;
-    height: 50px;
+    &::before {
+      position: absolute;
+      top: 24px;
+      left: 22px;
 
-    background-color: $secondary-bacground;
-    border-radius: 50%;
+      width: 50px;
+      height: 50px;
 
-    content: "";
-  }
+      background-color: $secondary-bacground;
+      border-radius: 50%;
+
+      content: "";
+    }
   }
 
   &--mass {
-  &::after {
-    position: absolute;
-    top: 35px;
-    left: 13px;
+    &::after {
+      position: absolute;
+      top: 35px;
+      left: 13px;
 
-    width: 67px;
-    height: 28px;
+      width: 67px;
+      height: 28px;
 
-    background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
 
-    content: "";
-  }
-  &::before {
-    position: absolute;
-    top: 24px;
-    left: 22px;
+      content: "";
+    }
 
-    width: 50px;
-    height: 50px;
+    &::before {
+      position: absolute;
+      top: 24px;
+      left: 22px;
 
-    background-color: $secondary-bacground;
-    border-radius: 50%;
+      width: 50px;
+      height: 50px;
 
-    content: "";
-  }
+      background-color: $secondary-bacground;
+      border-radius: 50%;
+
+      content: "";
+    }
   }
 }
 
