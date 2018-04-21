@@ -1,19 +1,39 @@
 .social {
   margin: 0;
-  padding: 20px 0;
+  padding-top: 22px;
+  padding-bottom: 6px;
 
   border-bottom: $border-bottom;
+}
+
+.social__item {
+  margin-right: 31px;
+  margin-bottom: 15px;
+
+  &:last-child,
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
 }
 
 .social__list {
   @include list-reset;
 
+  padding: 0 10px;
+
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social__link {
-  display: block;
-  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
   height: 19px;
+}
+
+.social__fill {
+  fill: #666666;
 }

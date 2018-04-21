@@ -1,9 +1,27 @@
 .gift {
+  position: relative;
   margin-top: 40px;
+  margin-bottom: 35px;
 
   text-align: center;
 
   background-color: #71b548;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  &::before {
+    position: absolute;
+    top: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
 }
 
 .gift__description {
