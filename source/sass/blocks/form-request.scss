@@ -1,0 +1,81 @@
+.form-request__item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  &--information {
+    border-bottom: $border-bottom;
+  }
+
+  &--purpose {
+    padding-top: 15px;
+    padding-bottom: 50px;
+
+    border-bottom: $border-bottom;
+  }
+
+  &--contacts {
+    margin-bottom: 10px;
+  }
+}
+
+.form-request__align {
+  display: flex;
+  align-items: baseline;
+}
+
+.form-request__caption {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  color: #222222;
+
+  &--name {
+    width: 72px;
+  }
+
+  &--weight {
+    width: 128px;
+  }
+
+  &--age {
+    width: 218px;
+  }
+
+  &--email {
+    width: 96px;
+  }
+}
+
+.form-request__field {
+  padding: 11px 15px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  text-transform: uppercase;
+
+  &--width {
+    width: 100%;
+  }
+}
+
+.form-request__title {
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  color: #111111;
+}
+
+.form-request_button {
+  width: 100%;
+
+  border: none;
+  cursor: pointer;
+}

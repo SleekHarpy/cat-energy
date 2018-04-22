@@ -1,0 +1,16 @@
+.footer__wrapper {
+  @include align-mobile;
+
+  background-color: $main-background;
+}
+
+.footer__link {
+  padding-top: 37px;
+  padding-bottom: 28px;
+
+  display: block;
+
+  text-align: center;
+
+  border-bottom: $border-bottom;
+}

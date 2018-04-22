@@ -1,0 +1,26 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: $font-oswald;
+  color: #111111;
+  list-style: none;
+  text-align: center;
+}
+
+.site-list__link {
+  padding-top: 23px;
+  padding-bottom: 22px;
+
+  display: block;
+  width: 100%;
+
+  color: #111111;
+  text-decoration: none;
+
+  border-bottom: $border-bottom;
+}

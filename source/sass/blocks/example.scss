@@ -1,0 +1,12 @@
+.example__wrapper {
+  @include align-mobile;
+  padding-top: 18px;
+
+  background-color: $main-background;
+}
+
+.example__title {
+  @include main-title;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
