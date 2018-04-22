@@ -1,0 +1,22 @@
+.selection-program__wrapper {
+  @include align-mobile;
+}
+
+.selection-program__title {
+  @include main-title;
+
+  margin-top: 15px;
+  margin-bottom: 26px;
+}
+
+.selection-program__description {
+  margin-bottom: 24px;
+  width: 240px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  color: #111111;
+}

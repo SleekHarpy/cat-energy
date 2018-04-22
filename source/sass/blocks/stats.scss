@@ -1,0 +1,21 @@
+.stats__description {
+  width: 279px;
+  margin-bottom: 24px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $font-arial;
+  color: #444444;
+}
+
+
+.stats__cost-description {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+}
