@@ -24,3 +24,22 @@
 
   border-bottom: $border-bottom;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .site-list__link {
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    color: #ffffff;
+  }
+}
