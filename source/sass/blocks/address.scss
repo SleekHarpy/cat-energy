@@ -30,3 +30,51 @@
   font-style: normal;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .address {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 57px;
+
+    width: 625px;
+  }
+
+  .address__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .address__item {
+    width: 155px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .address__bottom {
+    display: block;
+    margin-top: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding-top: 64px;
+    padding-right: 90px;
+    padding-bottom: 56px;
+    padding-left: 76px;
+
+    width: 404px;
+
+    background-color: #ffffff;
+  }
+
+  .address__item {
+    text-align: left;
+  }
+}

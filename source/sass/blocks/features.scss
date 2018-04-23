@@ -113,8 +113,10 @@
 
 @media (min-width: $tablet-width) {
   .features__wrapper {
-    width: 708px;
+    margin-bottom: 50px;
     padding: 0 30px;
+
+    width: 708px;
   }
 
   .features__item {
@@ -196,6 +198,7 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
+    margin-bottom: 47px;
     padding: 0 40px;
 
     display: flex;

@@ -100,3 +100,96 @@
   font-family: $font-arial;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .how-work__wrapper {
+    margin-bottom: 0;
+    padding: 0 30px;
+
+    width: 708px;
+  }
+
+  .how-work__title {
+    margin-bottom: 71px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how-work__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .how-work__item {
+    margin-bottom: 88px;
+    padding-left: 0;
+    padding-top: 96px;
+
+    width: 324px;
+
+    &--composition {
+      &::before {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &--shape {
+      &::before {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &--nutrition {
+      &::before {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &--time {
+      &::before {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  .how-work__description {
+    margin-bottom: 45px;
+
+    width: 245px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-work__wrapper {
+    margin-top: -25px;
+    padding: 0 40px;
+
+    width: 1220px;
+  }
+
+  .how-work__item {
+    width: 245px;
+  }
+}

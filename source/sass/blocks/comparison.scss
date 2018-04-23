@@ -1,3 +1,17 @@
 .comparison {
   min-height: 337px;
 }
+
+@media (min-width: $tablet-width) {
+  .comparison {
+    background-color: $main-background;
+
+    min-height: 462px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comparison {
+    width: 785px;
+  }
+}

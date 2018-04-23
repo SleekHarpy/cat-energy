@@ -3,10 +3,55 @@
 }
 
 .location__wrapper {
-  width: 320px;
   margin: 0 auto;
+
+  width: 320px;
 }
 
 .location__map {
   background-color: $main-background;
+}
+
+.location__map-image {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    width: 768px;
+  }
+
+  .location__map-image {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__wrapper {
+    position: relative;
+
+    width: 1440px;
+  }
+
+  .location__map-image {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

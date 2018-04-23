@@ -1,12 +1,42 @@
 .example__wrapper {
   @include align-mobile;
+
   padding-top: 18px;
 
-  background-color: $main-background;
+  background-color: #ffffff;
 }
 
 .example__title {
   @include main-title;
   margin-top: 0;
   margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    padding: 0 30px;
+
+    width: 708px;
+  }
+  .example__title {
+    margin-bottom: 75px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    padding: 0 110px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1220px;
+  }
+
+  .example__title {
+    width: 100%;
+  }
 }

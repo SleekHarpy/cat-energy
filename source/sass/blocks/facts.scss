@@ -35,3 +35,9 @@
 
   background-color: $main-background;
 }
+
+@media (min-width: $tablet-width) {
+  .facts {
+    width: 385px;
+  }
+}
