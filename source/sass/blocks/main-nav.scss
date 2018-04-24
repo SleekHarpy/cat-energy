@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
   }
+
   .main-nav__logo {
     padding: 0;
     border-bottom: 0;
@@ -45,6 +46,7 @@
 
     justify-content: space-between;
   }
+
   .main-nav__logo {
     &-image {
       &--tablet {
