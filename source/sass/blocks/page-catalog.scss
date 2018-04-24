@@ -1,4 +1,4 @@
-.main-catalog__title {
+.page-catalog__title {
   @include align-mobile;
   @include main-title;
 
@@ -6,4 +6,27 @@
   padding-bottom: 27px;
 
   border-bottom: $border-bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__title {
+    padding: 30px 30px;
+
+    width: 708px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__title {
+    margin-top: 20px;
+    margin-bottom: 27px;
+    padding: 0 110px;
+
+    width: 1220px;
+  }
 }
