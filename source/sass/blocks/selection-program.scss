@@ -47,3 +47,15 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .selection-program__wrapper {
+    padding: 0 110px;
+
+    width: 1220px;
+  }
+
+  .selection-program__description {
+    margin-left: 0;
+  }
+}

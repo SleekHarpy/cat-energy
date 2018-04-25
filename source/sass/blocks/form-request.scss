@@ -171,3 +171,48 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-request {
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form-request__item {
+    width: 570px;
+
+    &--comment {
+      width: 1220px;
+    }
+
+    &--additionally {
+      width: 1220px;
+    }
+  }
+
+  .form-request__wrapper {
+    &--contacts {
+      justify-content: space-between;
+
+      width: 1220px;
+    }
+  }
+
+  .form-request__align {
+    &--contacts {
+      width: 570px;
+    }
+  }
+
+  .form-request_button {
+    margin-right: 80px;
+    width: 570px;
+  }
+
+  .form-request__requirement {
+    margin-right: auto;
+  }
+}

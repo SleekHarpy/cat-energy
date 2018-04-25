@@ -61,14 +61,16 @@
             </fieldset>
             <fieldset class="form-request__item form-request__item--contacts">
               <legend class="form-request__title">Контактные данные (владельца кота)</legend>
-              <p class="form-request__align">
-                <label class="form-request__caption form-request__caption--email" for="e-mail">e-mail:*</label>
-                <input class="form-request__field  form-request__field--width" id="e-mail" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
-              </p>
-              <p class="form-request__align">
-                <label class="form-request__caption form-request__caption--phone" for="phone">Телефон:*</label>
-                <input class="form-request__field  form-request__field--width" id="phone" type="tel" name="phone" placeholder="8(960)900-60-90" required>
-              </p>
+              <div class="form-request__wrapper form-request__wrapper--contacts">
+                <p class="form-request__align form-request__align--contacts">
+                  <label class="form-request__caption form-request__caption--email" for="e-mail">e-mail:*</label>
+                  <input class="form-request__field  form-request__field--width" id="e-mail" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                </p>
+                <p class="form-request__align form-request__align--contacts">
+                  <label class="form-request__caption form-request__caption--phone" for="phone">Телефон:*</label>
+                  <input class="form-request__field  form-request__field--width" id="phone" type="tel" name="phone" placeholder="8(960)900-60-90" required>
+                </p>
+              </div>
             </fieldset>
             <fieldset class="form-request__item form-request__item--comment">
               <legend class="form-request__title">Комментарий</legend>
