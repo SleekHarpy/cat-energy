@@ -152,6 +152,12 @@
     flex-wrap: wrap;
   }
 
+  .form-request__align {
+    &--contacts {
+      width: 635px;
+    }
+  }
+
   .form-request__checkbox {
     width: 285px;
   }

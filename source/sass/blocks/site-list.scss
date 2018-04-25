@@ -28,6 +28,9 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    justify-content: space-between;
+
+    width: 440px;
 
     font-size: 18px;
     line-height: 24px;
@@ -39,6 +42,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    width: 480px;
+  }
+
   .site-list__link {
     color: #ffffff;
 
