@@ -80,9 +80,50 @@
   cursor: pointer;
 }
 
+.form-request__requirement {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: $font-arial;
+  color: #444444;
+}
+
 @media (min-width: $tablet-width) {
   .form-request {
     padding: 0 40px;
+  }
+
+  .form-request__item {
+    &--information {
+      margin-bottom: 50px;
+
+      border-bottom: none;
+    }
+
+    &--purpose {
+      margin-bottom: 75px;
+
+      border: 1px solid #d9d9d9;
+    }
+
+    &--contacts {
+      margin-bottom: 45px;
+    }
+
+    &--comment {
+      margin-bottom: 60px;
+    }
+
+    &--additionally {
+      margin-bottom: 50px;
+    }
+  }
+
+  .form-request__title {
+    margin-bottom: 60px;
+
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .form-request__caption {
@@ -93,5 +134,40 @@
   .form-request__field {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .form-request__comment {
+    width: 100%;
+    height: 185px;
+
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $font-oswald;
+    text-transform: uppercase;
+    color: #444444;
+  }
+
+  .form-request__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-request__checkbox {
+    width: 285px;
+  }
+
+  .form-request_button {
+    padding: 17px 0;
+    margin-right: 55px;
+    width: 285px;
+
+    font-size: 20px;
+    line-height: 20px
+  }
+
+  .form-request__requirement {
+    display: inline-block;
+
+    font-size: 16px;
   }
 }
