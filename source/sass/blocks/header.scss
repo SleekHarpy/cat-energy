@@ -5,14 +5,16 @@
 
 @media (min-width: $tablet-width) {
   .header__wrapper {
-    width: 723px;
     padding: 0 15px;
+
+    width: 723px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header__wrapper {
+    padding: 0 40px;
+
     width: 1300px;
-    padding: 0 70px;
   }
 }
