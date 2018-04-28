@@ -12,7 +12,6 @@
 
 .promo__background {
   position: relative;
-
   margin-bottom: 135px;
   padding-top: 30px;
   padding-bottom: 1px;
@@ -136,6 +135,7 @@
 
       background-color: $secondary-bacground;
       background-image: url("../img/index-background-desktop.jpg");
+
       content: "";
     }
   }

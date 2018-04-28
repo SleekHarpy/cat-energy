@@ -1,18 +1,27 @@
+.example {
+  background-color: $main-background;
+}
+
 .example__wrapper {
   @include align-mobile;
 
   padding-top: 18px;
-
-  background-color: #ffffff;
 }
 
 .example__title {
   @include main-title;
+  margin: 0 auto;
   margin-top: 0;
   margin-bottom: 23px;
+
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
   .example__wrapper {
     padding: 0 30px;
 
@@ -21,6 +30,8 @@
 
   .example__title {
     margin-bottom: 75px;
+
+    width: 708px;
 
     font-size: 60px;
     line-height: 60px;
@@ -38,6 +49,6 @@
   }
 
   .example__title {
-    width: 100%;
+    width: 1220px;
   }
 }
