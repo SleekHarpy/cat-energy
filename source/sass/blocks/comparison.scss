@@ -9,13 +9,13 @@
     width: 100vw;
     margin-left: calc((100vw - 708px) / -2);
     min-height: 462px;
-    }
+  }
 
-    .comparison__wrapper {
-      margin: 0 auto;
+  .comparison__wrapper {
+    margin: 0 auto;
 
-      width: 708px;
-    }
+    width: 708px;
+  }
 }
 
 @media (min-width: $desktop-width) {
