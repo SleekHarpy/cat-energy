@@ -4,11 +4,12 @@
 
 @media (min-width: $tablet-width) {
   .comparison {
-    background-color: $main-background;
+    margin-left: calc((100vw - 708px) / -2);
 
     width: 100vw;
-    margin-left: calc((100vw - 708px) / -2);
     min-height: 462px;
+
+    background-color: $main-background;
   }
 
   .comparison__wrapper {
