@@ -40,28 +40,14 @@
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
-    width: 1220px;
-  }
-
-  .example__title {
-    width: 1220px;
-  }
-
-  .example__background {
-    margin-left: calc((100vw - 1220px) / -2);
-
-    width: 100vw;
-
-    background-color: $main-background;
-  }
-
-  .example__container {
-    margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
+    width: 1220px;
+  }
+
+  .example__title {
     width: 1220px;
   }
 }
