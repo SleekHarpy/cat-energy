@@ -5,6 +5,8 @@
 }
 
 .location__map {
+  min-height: 365px; //Для google карт
+
   background-color: $main-background;
 }
 
