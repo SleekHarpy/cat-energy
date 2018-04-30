@@ -62,6 +62,7 @@
 
 .promo__button {
   margin: 0 auto;
+  transform: translateY(135px);
 
   display: block;
   width: 280px;
@@ -112,7 +113,7 @@
   }
 
   .promo__description {
-    margin-bottom: 0;
+    margin-bottom: 50px;
     margin-left: 88px;
 
     width: 295px;
@@ -123,8 +124,8 @@
   }
 
   .promo__button {
-    //margin-left: 274px;
-    margin-left: 27%;
+    transform: translateY(0);
+    margin-left: 88px;
     padding: 16px 0;
 
     width: 245px;

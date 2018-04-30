@@ -5,5 +5,5 @@ function moveDivisor() {
 }*/
 
 function l_image (a) {
- document.querySelector(".comparison__image").src=a
+  document.querySelector(".comparison__image").src=a
 }
