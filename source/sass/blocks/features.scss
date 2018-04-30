@@ -111,6 +111,16 @@
   background-size: 24px 11px;
 }
 
+.features-button:hover {
+  background-color: transparent;
+}
+
+.features-button:active {
+  color: #111111;
+
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .features__wrapper {
     margin-bottom: 50px;

@@ -1,6 +1,6 @@
 .how-work__wrapper {
   @include align-mobile;
-  margin-bottom: 45px;
+  margin-bottom: 28px;
 }
 
 .how-work__title {
@@ -102,6 +102,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .how-work {
+    border-bottom: $border-bottom;
+  }
+
   .how-work__wrapper {
     margin-bottom: 0;
     padding: 0 30px;
@@ -110,21 +114,24 @@
   }
 
   .how-work__title {
-    margin-bottom: 71px;
+    margin-bottom: 33px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   .how-work__list {
+    margin-bottom: 9px;
     padding: 0;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .how-work__item {
-    margin-bottom: 88px;
+    margin-top: 39px;
+    margin-bottom: 48px;
     padding-left: 0;
     padding-top: 96px;
 
@@ -138,6 +145,24 @@
         width: 80px;
         height: 80px;
       }
+
+      &::after {
+        position: absolute;
+        top: -41px;
+        left: 120px;
+        z-index: -1;
+
+        width: 70px;
+        height: 230px;
+
+        font-size: 281px;
+        line-height: 281px;
+        font-weight: 400;
+        font-family: $font-oswald;
+        color: #f2f2f2;
+
+        content: "1";
+      }
     }
 
     &--shape {
@@ -147,6 +172,24 @@
 
         width: 80px;
         height: 80px;
+      }
+
+      &::after {
+        position: absolute;
+        top: -41px;
+        left: 110px;
+        z-index: -1;
+
+        width: 105px;
+        height: 230px;
+
+        font-size: 281px;
+        line-height: 281px;
+        font-weight: 400;
+        font-family: $font-oswald;
+        color: #f2f2f2;
+
+        content: "2";
       }
     }
 
@@ -158,6 +201,24 @@
         width: 80px;
         height: 80px;
       }
+
+      &::after {
+        position: absolute;
+        top: -41px;
+        left: 112px;
+        z-index: -1;
+
+        width: 112px;
+        height: 230px;
+
+        font-size: 281px;
+        line-height: 281px;
+        font-weight: 400;
+        font-family: $font-oswald;
+        color: #f2f2f2;
+
+        content: "3";
+      }
     }
 
     &--time {
@@ -167,6 +228,24 @@
 
         width: 80px;
         height: 80px;
+      }
+
+      &::after {
+        position: absolute;
+        top: -41px;
+        left: 112px;
+        z-index: -1;
+
+        width: 125px;
+        height: 230px;
+
+        font-size: 281px;
+        line-height: 281px;
+        font-weight: 400;
+        font-family: $font-oswald;
+        color: #f2f2f2;
+
+        content: "4";
       }
     }
   }
