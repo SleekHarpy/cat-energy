@@ -1,5 +1,6 @@
 .promo {
   margin-bottom: 22px;
+  padding-bottom: 1px;
 }
 
 .promo__background {
@@ -122,7 +123,8 @@
   }
 
   .promo__button {
-    margin-left: 274px;
+    //margin-left: 274px;
+    margin-left: 27%;
     padding: 16px 0;
 
     width: 245px;
@@ -134,22 +136,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo__wrapper {
+  .promo__background {
     position: relative;
-    padding-top: 23px;
-    padding-bottom: 250px;
-
-    width: 1300px;
 
     &::before {
       position: absolute;
       top: -170px;
-      right: -70px;
-      //left: 500px;
+      right: 25px;
       z-index: -2;
 
       width: 720px;
-      //width: 100vw;
       height: 696px;
 
       background-color: #64a83b;
@@ -158,24 +154,30 @@
 
       content: "";
     }
-  }
 
-  .promo__background {
-    margin-left: 120px;
+    .promo__wrapper {
+      padding: 0 40px;
 
-    &::before {
-      top: -50px;
-      left: 370px;
-      z-index: -1;
+      width: 1220px;
 
-      width: 552px;
-      height: 499px;
+      &::before {
+        top: -50px;
+        left: 490px;
+        z-index: -1;
 
-      background-image: url("../img/index-can-desktop.png");
+        width: 552px;
+        height: 499px;
+
+        background-image: url("../img/index-can-desktop.png");
+      }
     }
-  }
 
-  .promo__button {
-    margin-left: 120px;
+    .promo__title {
+      margin-left: 80px;
+    }
+
+    .promo__description {
+      margin-left: 80px;
+    }
   }
 }
