@@ -128,7 +128,9 @@ input[type=range]:focus::-moz-range-thumb {
 
 @media (min-width: $tablet-width) {
   .comparison {
-    width: 708px;
+    position: relative;
+
+    width: 100%;
     min-height: 462px;
 
     background-color: $main-background;
@@ -144,5 +146,7 @@ input[type=range]:focus::-moz-range-thumb {
 @media (min-width: $desktop-width) {
   .comparison {
     width: 785px;
+
+    background: none;
   }
 }
