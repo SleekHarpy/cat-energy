@@ -39,6 +39,7 @@
   color: #444444;
   background: #f2f2f2;
 }
+
 .facts__col--label:nth-child(1) {
   margin-left: 21px;
   padding: 0 2px;
@@ -47,6 +48,7 @@
 
   width: 80px;
 }
+
 .facts__col--label:nth-child(2) {
   margin-right: 8px;
   bottom: -11px;
@@ -68,7 +70,6 @@
 
     line-height: 70px;
     font-size: 30px;
-
   }
 
   .facts__col--label {
@@ -93,7 +94,7 @@
   }
 }
 
-@media (min-width: $desktop-width)  {
+@media (min-width: $desktop-width) {
   .facts__col--label {
     background: #f2f2f2;
   }
