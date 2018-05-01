@@ -35,13 +35,14 @@
 @media (min-width: $tablet-width) {
   .address {
     margin: 0 auto;
-    padding-top: 35px;
+    padding-top: 65px;
     padding-bottom: 57px;
 
     width: 625px;
   }
 
   .address__title {
+    width: 200px;
     font-size: 20px;
     line-height: 25px;
   }

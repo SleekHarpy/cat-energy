@@ -29,6 +29,10 @@
     width: 768px;
   }
 
+  .location__map {
+    min-height: 396px; // Для google карт
+  }
+
   .location__map-image {
     &--mobile {
       display: none;
@@ -38,6 +42,7 @@
       display: block;
     }
   }
+
 }
 
 @media (min-width: $desktop-width) {
