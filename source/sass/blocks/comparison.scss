@@ -141,6 +141,38 @@ input[type=range]:focus::-moz-range-thumb {
 
     width: 708px;
   }
+
+  .comparison__range-colrols {
+    width: 570px;
+  }
+
+  .comparison__scale {
+    position: relative;
+
+    width: 430px;
+
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .comparison__bar {
+    display: none;
+  }
+
+  .comparison__toggle-bar {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+
+    background-color: $secondary-bacground;
+    border: 13px solid #ffffff;
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
 }
 
 @media (min-width: $desktop-width) {

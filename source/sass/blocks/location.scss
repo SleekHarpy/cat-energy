@@ -52,6 +52,10 @@
     width: 1300px;
   }
 
+  .location__map {
+    min-height: 401px; // Для google карт
+  }
+
   .location__map-image {
     &--tablet {
       display: none;

@@ -39,6 +39,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    padding-top: 8px;
+  }
   .example__wrapper {
     display: flex;
     justify-content: space-between;
@@ -50,6 +53,7 @@
   }
 
   .example__title {
+    margin-bottom: 75px;
     width: 1220px;
   }
 }

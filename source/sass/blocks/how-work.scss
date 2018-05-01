@@ -262,9 +262,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .how-work {
+    border-bottom: none;
+  }
+
   .how-work__wrapper {
     margin-top: -25px;
     padding: 0 40px;
+    padding-top: 24px;
 
     width: 1220px;
   }
