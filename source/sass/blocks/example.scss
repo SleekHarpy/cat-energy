@@ -1,18 +1,17 @@
 .example {
+  padding-top: 18px;
   background-color: $main-background;
 }
 
 .example__wrapper {
   @include align-mobile;
-
-  padding-top: 18px;
 }
 
 .example__title {
   @include main-title;
   margin: 0 auto;
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   width: 280px;
 }
