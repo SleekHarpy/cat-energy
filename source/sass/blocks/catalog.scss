@@ -2,3 +2,24 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    margin-bottom: 40px;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    margin-bottom: 45px;
+    padding: 0 40px;
+
+    width: 1220px;
+  }
+}

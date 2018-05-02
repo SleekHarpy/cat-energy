@@ -37,3 +37,46 @@
   text-transform: none;
   font-family: $font-arial;
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    margin-top: 70px;
+
+    background-image: url("../img/gift-photo-tablet.jpg");
+
+    &::before {
+      left: 119px;
+    }
+
+    .gift__description {
+      margin: 0 120px;
+      margin-left: auto;
+      padding: 70px 0;
+
+      width: 165px;
+
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    margin-top: 40px;
+
+    text-align: center;
+
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+    &::before {
+      top: 62px;
+      left: 50%;
+    }
+  }
+
+  .gift__description {
+    margin: 0 auto;
+    padding-top: 185px;
+    padding-bottom: 40px;
+  }
+}

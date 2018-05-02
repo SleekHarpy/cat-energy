@@ -1,4 +1,20 @@
-.header {
+.header__wrapper {
   width: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    padding: 0 15px;
+
+    width: 723px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    padding: 0;
+
+    width: 1300px;
+  }
 }

@@ -1,7 +1,9 @@
+.footer {
+  background-color: $main-background;
+}
+
 .footer__wrapper {
   @include align-mobile;
-
-  background-color: $main-background;
 }
 
 .footer__link {
@@ -13,4 +15,35 @@
   text-align: center;
 
   border-bottom: $border-bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    padding: 0 30px;
+    padding-top: 60px;
+    padding-bottom: 62px;
+
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  .footer__logo {
+    width: 192px;
+  }
+
+  .footer__link {
+    padding: 0;
+
+    text-align: left;
+
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding: 60px 40px;
+    width: 1220px;
+  }
 }

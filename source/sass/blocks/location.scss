@@ -1,12 +1,67 @@
-.location__wrapper--background {
-  background-color: $main-background;
-}
-
 .location__wrapper {
-  width: 320px;
   margin: 0 auto;
+
+  width: 320px;
 }
 
 .location__map {
+  min-height: 365px; //Для google карт
+
   background-color: $main-background;
+}
+
+.location__map-image {
+  margin: 0 auto;
+
+  display: block;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    width: 768px;
+  }
+
+  .location__map {
+    min-height: 396px; // Для google карт
+  }
+
+  .location__map-image {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__wrapper {
+    position: relative;
+
+    width: 1300px;
+  }
+
+  .location__map {
+    min-height: 401px; // Для google карт
+  }
+
+  .location__map-image {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

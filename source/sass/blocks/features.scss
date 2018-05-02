@@ -110,3 +110,170 @@
   background-position-x: 96px;
   background-size: 24px 11px;
 }
+
+.features-button:hover {
+  background-color: transparent;
+}
+
+.features-button:active {
+  color: #111111;
+
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    margin-bottom: 50px;
+    padding: 0 30px;
+
+    width: 708px;
+  }
+
+  .features__item {
+    margin-bottom: 30px;
+    padding: 76px 52px;
+    padding-bottom: 50px;
+
+    &--losing-weight {
+      &::after {
+        top: 80px;
+        left: 477px;
+
+        width: 140px;
+        height: 194px;
+
+        background-image: url("../img/icon-cat-slim.svg");
+      }
+
+      &::before {
+        top: 94px;
+        left: 447px;
+
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    &--mass {
+      &::after {
+        top: 137px;
+        left: 414px;
+
+        width: 268px;
+        height: 110px;
+
+        background-image: url("../img/icon-cat-pro.svg");
+      }
+
+      &::before {
+        top: 94px;
+        left: 447px;
+
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  .features__title {
+    margin: 0;
+    margin-bottom: 26px;
+
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .features__description {
+    margin-bottom: 23px;
+
+    width: 380px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+
+    &--mass {
+      width: 340px;
+    }
+  }
+
+  .features-button {
+    font-size: 20px;
+    line-height: 20px;
+
+    background-position-x: 131px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    margin-bottom: 47px;
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .features__item {
+    padding: 75px 52px;
+    padding-bottom: 50px;
+
+    width: 468px;
+
+    &--losing-weight {
+      &::after {
+        top: 40px;
+        left: 65px;
+
+        width: 70px;
+        height: 97px;
+
+        background-image: url("../img/icon-cat-slim.svg");
+      }
+
+      &::before {
+        top: 48px;
+        left: 53px;
+
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    &--mass {
+      &::after {
+        top: 70px;
+        left: 37px;
+
+        width: 134px;
+        height: 56px;
+
+        background-image: url("../img/icon-cat-pro.svg");
+      }
+
+      &::before {
+        top: 48px;
+        left: 55px;
+
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .features__title {
+    margin-left: 163px;
+    margin-bottom: 75px;
+  }
+
+  .features__description {
+    margin-bottom: -1px;
+    width: 465px;
+
+    &--mass {
+      width: 445px;
+    }
+  }
+}

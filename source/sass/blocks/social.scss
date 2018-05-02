@@ -37,3 +37,11 @@
 .social__fill {
   fill: #666666;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+
+    border-bottom: none;
+  }
+}
