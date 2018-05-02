@@ -1,3 +1,9 @@
+.location {
+  &--background {
+    background-color: $main-background;
+  }
+}
+
 .location__wrapper {
   margin: 0 auto;
 

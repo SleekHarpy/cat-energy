@@ -49,20 +49,20 @@
             <fieldset class="form-request__item form-request__item--purpose">
               <legend class="visually-hidden">Цель программы</legend>
               <p>
-                <input class="form-request__field" id="losing-weight" type="radio" name="purpose" value="losing-weight" checked>
-                <label class="form-request__caption" for="losing-weight">Похудение</label>
+                <input class="form-request__field form-request__field--radio visually-hidden" id="losing-weight" type="radio" name="purpose" value="losing-weight" checked>
+                <label class="form-request__caption form-request__caption--radio" for="losing-weight">Похудение</label>
               </p>
               <p>
-                <input class="form-request__field" id="mass-gathering" type="radio" name="purpose" value="mass-gathering">
-                <label class="form-request__caption" for="mass-gathering">Набор массы</label>
+                <input class="form-request__field form-request__field--radio visually-hidden" id="mass-gathering" type="radio" name="purpose" value="mass-gathering">
+                <label class="form-request__caption form-request__caption--radio" for="mass-gathering">Набор массы</label>
               </p>
               <p>
-                <input class="form-request__field" id="advice" type="radio" name="purpose" value="advice">
-                <label class="form-request__caption" for="advice">Не знаю (нужен ваш совет)</label>
+                <input class="form-request__field form-request__field--radio visually-hidden" id="advice" type="radio" name="purpose" value="advice">
+                <label class="form-request__caption form-request__caption--radio" for="advice">Не знаю (нужен ваш совет)</label>
               </p>
             </fieldset>
             <fieldset class="form-request__item form-request__item--contacts">
-              <legend class="form-request__title">Контактные данные (владельца кота)</legend>
+              <legend class="form-request__title form-request__title--green-line">Контактные данные (владельца кота)</legend>
               <div class="form-request__wrapper form-request__wrapper--contacts">
                 <p class="form-request__align form-request__align--contacts">
                   <label class="form-request__caption form-request__caption--email" for="e-mail">e-mail:*</label>
@@ -75,36 +75,36 @@
               </div>
             </fieldset>
             <fieldset class="form-request__item form-request__item--comment">
-              <legend class="form-request__title">Комментарий</legend>
-              <textarea class="form-request__comment" name="form-request__comment" rows="5" cols="32" placeholder="Расскажите о всех повадках кота"></textarea>
+              <legend class="form-request__title form-request__title--comment">Комментарий</legend>
+              <textarea class="form-request__comment" name="form-request__comment" rows="7" cols="39" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form-request__item form-request__item--additionally">
-              <legend class="form-request__title">Дополнительно</legend>
+              <legend class="form-request__title form-request__title--additionally">Дополнительно</legend>
               <div class="form-request__wrapper">
                 <p class="form-request__checkbox">
-                  <input class="form-request__field form-request__field--checkbox" id="sweetener" type="checkbox" name="additionally" value="sweetener" checked>
+                  <input class="form-request__field form-request__field--checkbox visually-hidden" id="sweetener" type="checkbox" name="additionally" value="sweetener" checked>
                   <label class="form-request__caption form-request__caption--checkbox" for="sweetener">Сахарозаменитель</label>
                 </p>
                 <p class="form-request__checkbox">
-                  <input class="form-request__field form-request__field--checkbox" id="water" type="checkbox" name="additionally" value="water">
+                  <input class="form-request__field form-request__field--checkbox  visually-hidden" id="water" type="checkbox" name="additionally" value="water">
                   <label class="form-request__caption form-request__caption--checkbox" for="water">Питьевая вода</label>
                 </p>
                 <p class="form-request__checkbox">
-                  <input class="form-request__field form-request__field--checkbox" id="milk" type="checkbox" name="additionally" value="milk">
+                  <input class="form-request__field form-request__field--checkbox  visually-hidden" id="milk" type="checkbox" name="additionally" value="milk">
                   <label class="form-request__caption form-request__caption--checkbox" for="milk">Молоко</label>
                 </p>
                 <p class="form-request__checkbox">
-                  <input class="form-request__field form-request__field--checkbox" id="vitamin" type="checkbox" name="additionally" value="vitamin">
+                  <input class="form-request__field form-request__field--checkbox  visually-hidden" id="vitamin" type="checkbox" name="additionally" value="vitamin">
                   <label class="form-request__caption form-request__caption--checkbox" for="vitamin">Витамины</label>
                 </p>
-              <div>
+              </div>
             </fieldset>
             <button class="form-request_button button" type="submit">Отправить заявку</button>
             <p class="form-request__requirement">* &mdash; Обязательные поля</p>
           </form>
         </div>
       </section>
-      <section class="location">
+      <section class="location location--background">
         <div class="location__wrapper">
           <h2 class="visually-hidden">Наш адрес</h2>
           <div class="address">

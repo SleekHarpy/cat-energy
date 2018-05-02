@@ -5,24 +5,51 @@
   border: none;
 
   &--information {
-    border-bottom: $border-bottom;
+    margin-bottom: 9px;
   }
 
   &--purpose {
-    padding-top: 15px;
-    padding-bottom: 50px;
+    margin-bottom: 28px;
+    padding-top: 11px;
+    padding-left: 19px;
+    padding-bottom: 3px;
+    transform: translateX(-20px);
 
-    border-bottom: $border-bottom;
+    width: 300px;
+
+    border: 1px solid #d9d9d9;
   }
 
   &--contacts {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  &--comment {
+    margin-bottom: 18px;
+  }
+
+  &--additionally {
+    margin-bottom: 16px;
   }
 }
 
 .form-request__align {
+  margin: 15px 0;
   display: flex;
   align-items: baseline;
+}
+
+.form-request__field {
+  &--width { // Скрывает стрелочки у полей с типом "number"
+    -moz-appearance: textfield;
+  }
+
+  &--width::-webkit-outer-spin-button,
+  &--width::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
 }
 
 .form-request__caption {
@@ -48,7 +75,108 @@
   &--email {
     width: 96px;
   }
+
+  &--phone {
+    margin-right: 10px;
+  }
 }
+
+.form-request__caption { // < Радокнопки
+  &--radio {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 45px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    cursor: pointer;
+  }
+
+  &--radio::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    transition: all 0.2s linear;
+    background-color: $secondary-bacground;
+    background-clip: content-box;
+
+    content: "";
+  }
+
+  &--radio:hover::before,
+  &--radio:focus::before,
+  &--radio:active::before {
+    border: 1px solid #bababa;
+  }
+
+  &--radio:active {
+    opacity: 0.3;
+  }// Радиокнопки />
+}
+
+ .form-request__field--radio:checked ~ .form-request__caption--radio::before { //Радокнопки
+  padding: 11px;
+}
+
+.form-request__caption { // < Чекбоксы
+  &--checkbox {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 45px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    cursor: pointer;
+  }
+
+  &--checkbox::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    width: 29px;
+    height: 27px;
+
+    border: 1px solid #cdcdcd;
+
+    content: "";
+  }
+
+  &--checkbox:hover::before {
+    border: 1px solid #bababa;
+  }
+
+  &--checkbox:active {
+    opacity: 0.3;
+  }
+}
+
+.form-request__field {
+  &--checkbox:focus + .form-request__caption--checkbox::before  {
+    border: 1px solid #bababa;
+  }
+}
+
+.form-request__field--checkbox:checked + .form-request__caption--checkbox::before {
+    background-image: url("../img/icon-tick.svg");
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    border: 1px solid #bababa;
+} // Чекбоксы />
 
 .form-request__field {
   padding: 11px 15px;
@@ -71,21 +199,50 @@
   font-weight: 400;
   font-family: $font-oswald;
   color: #111111;
+
+  &--comment {
+    margin-bottom: 35px;
+  }
+
+  &--additionally {
+    margin-bottom: 25px;
+  }
+}
+
+.form-request__comment {
+
+  padding: 15px;
+  padding-top: 13px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  color: #444444;
 }
 
 .form-request_button {
+  margin-bottom: 6px;
+
   width: 100%;
+
+  font-size: 16px;
+  line-height: 20px;
 
   border: none;
   cursor: pointer;
 }
 
 .form-request__requirement {
+  margin-bottom: 32px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   font-family: $font-arial;
   color: #444444;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,19 +252,24 @@
 
   .form-request__item {
     &--information {
-      margin-bottom: 50px;
+      margin-bottom: 57px;
 
       border-bottom: none;
     }
 
     &--purpose {
       margin-bottom: 75px;
+      padding-top: 18px;
+      padding-left: 27px;
+      transform: translateX(0);
+
+      width: 610px;
 
       border: 1px solid #d9d9d9;
     }
 
     &--contacts {
-      margin-bottom: 45px;
+      margin-bottom: 62px;
     }
 
     &--comment {
@@ -115,7 +277,7 @@
     }
 
     &--additionally {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
   }
 
@@ -124,11 +286,68 @@
 
     font-size: 36px;
     line-height: 36px;
+
+    &--comment {
+      margin-bottom: 74px;
+    }
+
+    &--additionally {
+      margin-bottom: 52px;
+    }
   }
 
   .form-request__caption {
     font-size: 20px;
     line-height: 20px;
+
+    &--name {
+      width: 75px;
+    }
+
+    &--weight {
+      width: 120px;
+    }
+
+    &--age {
+      width: 185px;
+    }
+
+    &--email {
+      width: 100px;
+    }
+
+    &--phone {
+      width: 110px;
+    }
+  }
+
+  .form-request__caption { // < Радиокнопки
+    &--radio {
+      margin-bottom: 16px;
+
+      padding-left: 60px;
+    }
+
+    &--radio::before {
+      padding: 20px;
+
+      width: 40px;
+      height: 40px;
+    }
+  } // радиокнопки />
+
+  .form-request__caption { // < Чекбоксы
+    &--checkbox {
+      margin-bottom: 20px;
+      padding-left: 59px;
+    }
+
+    &--checkbox::before {
+      top: -10px;
+
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .form-request__field {
@@ -137,8 +356,8 @@
   }
 
   .form-request__comment {
-    width: 100%;
-    height: 185px;
+    width: 600px;
+    height: 145px;
 
     font-size: 20px;
     line-height: 30px;
@@ -154,16 +373,21 @@
 
   .form-request__align {
     &--contacts {
+      margin-bottom: 1px;
       width: 635px;
     }
   }
 
   .form-request__checkbox {
-    width: 285px;
+    width: 286px;
+
+    &:nth-child(2n) {
+      margin-left: auto;
+    }
   }
 
   .form-request_button {
-    padding: 17px 0;
+    padding: 16px 0;
     margin-right: 55px;
     width: 285px;
 
@@ -175,7 +399,7 @@
     display: inline-block;
 
     font-size: 16px;
-    vertical-align: middle;
+    vertical-align: top;
   }
 }
 
