@@ -9,11 +9,11 @@
   border-bottom: $border-bottom;
 }
 
-.product-card__image {
+/*.product-card__image {
   &--tablet {
     display: none;
   }
-}
+}*/
 
 .product-card__content {
   width: 140px;
@@ -129,13 +129,13 @@
     bottom: 305px;
     transform: translateX(-50%);
 
-    &--mobile {
+    /*&--mobile {
       display: none;
     }
 
     &--tablet {
       display: block;
-    }
+    }*/
   }
 
   .product-card__content {

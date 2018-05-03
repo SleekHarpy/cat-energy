@@ -415,12 +415,24 @@
   .form-request__item {
     width: 570px;
 
+    &--information {
+      margin-bottom: 50px;
+    }
+
     &--comment {
       width: 1220px;
     }
 
     &--additionally {
       width: 1220px;
+    }
+  }
+
+  .form-request__item { // < Радиокнопки
+    &--purpose {
+      margin-top: 19px;
+      margin-bottom: 70px;
+      width: 540px;
     }
   }
 
@@ -435,6 +447,20 @@
   .form-request__align {
     &--contacts {
       width: 570px;
+    }
+  }
+
+  .form-request__caption {
+    &--name {
+      width: 80px;
+    }
+
+    &--weight {
+      width: 124px;
+    }
+
+    &--age {
+      width: 193px;
     }
   }
 
