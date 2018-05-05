@@ -1,5 +1,4 @@
 .product-card {
-  //margin-bottom: 140px;
   padding: 0 20px;
   padding-bottom: 25px;
 
@@ -8,12 +7,6 @@
 
   border-bottom: $border-bottom;
 }
-
-/*.product-card__image {
-  &--tablet {
-    display: none;
-  }
-}*/
 
 .product-card__content {
   width: 140px;
@@ -66,6 +59,16 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
+  &--more {
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
 }
 
 .product-card--more {
@@ -106,7 +109,7 @@
 @media (min-width: $tablet-width) {
   .product-card {
     position: relative;
-    margin-top: 138px;
+    margin-top: 139px;
     margin-bottom: 0;
     padding: 163px 37px;
     padding-bottom: 40px;

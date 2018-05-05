@@ -16,10 +16,10 @@
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="main-nav__logo-image main-nav__logo-image--mobile" src="img/logo-mobile.svg" width="190" height="38" alt="Cat Energy">
+              <img class="main-nav__logo-image main-nav__logo-image--mobile" src="img/logo-mobile.svg" alt="Cat Energy">
             </picture>
           </a>
-          <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+          <!--<button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>-->
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active-white"><a class="site-list__link site-list__link--active site-list__link--active-white site-list__link--color">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link site-list__link--color" href="catalog.html">Каталог продукции</a></li>
@@ -70,7 +70,7 @@
               <p class="how-work__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="how-work__item how-work__item--time">
-              <p class="how-work__description">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
+              <p class="how-work__description">Уже через месяц наслаждайтесь изменениями к лучшему <br class="how-work__br"> вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -97,22 +97,33 @@
           </div>
           <div class="comparison">
             <div class="comparison__wrapper">
+                <picture class="comparison__picture">
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <!--<figure class="comparison__image">
-                <div class="comparison__divisor"></div>
-              </figure>
-              <button class="comparison__button" type="button">Было</button>
-              <input class="comparison__slider" type="range" name="slider" min="0" max="100" value="50" oninput="moveDivisor()">
-              <button class="comparison__button" type="button">Стало</button>-->
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="comparison__image comparison__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение кота до приёма Cat Energy">
+                </picture>
+                <picture  class="comparison__picture">
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-              <img class="comparison__image" src="img/before-mobile@1x2.png" alt="Изображение кота до приёма Cat Energy">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="comparison__image comparison__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Изображение кота до приёма Cat Energy">
+                </picture>
               <div class="comparison__range-colrols">
-                <a class="comparison__toggle" href="javascript:l_image ('img/before-mobile@1x2.png')">Было</a>
+                <span class="comparison__toggle">Было</span>
+                <!--<a class="comparison__toggle" href="javascript:l_image ('img/before-mobile@1x2.png')">Было</a>-->
                 <div class="comparison__scale">
                   <div class="comparison__bar"></div>
                   <div class="comparison__toggle-bar"></div>
                 </div>
-                <a class="comparison__toggle" href="javascript:l_image ('img/after-mobile@1x2.png')">Стало</a>
+                <span class="comparison__toggle">Стало</span>
+                <!--<a class="comparison__toggle" href="javascript:l_image ('img/after-mobile@1x2.png')">Стало</a>-->
               </div>
             </div>
           </div>
@@ -152,7 +163,10 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в Вконтакте</span>
-                <svg width="22" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                <svg width="22" height="12">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+                <!--<svg width="22" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
                   <g>
                     <path
                       class="social__fill"
@@ -172,7 +186,7 @@
                     c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
                     c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z"/>
                   </g>
-                </svg>
+                </svg>-->
               </a>
             </li>
             <li class="social__item">
@@ -223,7 +237,7 @@
     </footer>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCidHjv9mtVlHd5Fbr8371vHr1oXgh9owM&callback=initMap"></script>
-    <scri/pt src="js/map.js"></script>
+    <script src="js/map.js"></script>
     <script src="js/slider.js"></script>
 
   </body>

@@ -6,7 +6,7 @@
 
 .additional-products__title {
   margin: 0;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 34px;
 
   font-size: 24px;
@@ -19,8 +19,8 @@
 }
 
 .additional-products__item {
-  padding-top: 12px;
-  padding-bottom: 18px;
+  padding-top: 13px;
+  padding-bottom: 15px;
 
   border-bottom: $border-bottom;
 }
@@ -58,6 +58,8 @@
 .additional-products__button {
   width: 100%;
 
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 }
 

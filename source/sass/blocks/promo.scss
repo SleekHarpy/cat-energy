@@ -73,7 +73,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     margin-bottom: 0;
-    padding-bottom: 479px;
+    padding-bottom: 481px;
   }
 
   .promo__background {
@@ -114,7 +114,7 @@
   }
 
   .promo__description {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     margin-left: 88px;
 
     width: 295px;
@@ -147,8 +147,8 @@
 
     &::before {
       position: absolute;
-      top: -170px;
-      right: 2px;
+      top: -175px;
+      right: 41px;
       z-index: -2;
 
       width: 720px;

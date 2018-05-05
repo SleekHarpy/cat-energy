@@ -40,6 +40,8 @@
 }
 
 .form-request__field {
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
   &--width { // Скрывает стрелочки у полей с типом "number"
     -moz-appearance: textfield;
   }
@@ -49,6 +51,18 @@
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
   }
 }
 
@@ -114,20 +128,29 @@
     content: "";
   }
 
-  &--radio:hover::before,
-  &--radio:focus::before,
-  &--radio:active::before {
+  &--radio:hover::before {
     border: 1px solid #bababa;
   }
 
   &--radio:active {
     opacity: 0.3;
-  }// Радиокнопки />
+  }
 }
 
- .form-request__field--radio:checked ~ .form-request__caption--radio::before { //Радокнопки
+.form-request__field--radio:focus + .form-request__caption--radio::before  {
+  border: 1px solid #bababa;
+}
+
+.form-request__field--radio:checked ~ .form-request__caption--radio::before {
   padding: 11px;
 }
+
+.form-request__field--radio:disabled + .form-request__caption--radio::before,
+.form-request__field--radio:disabled + .form-request__caption--radio {
+    opacity: 0.3;
+
+    cursor: default;
+}// Радиокнопки />
 
 .form-request__caption { // < Чекбоксы
   &--checkbox {
@@ -175,8 +198,14 @@
     background-position: center;
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    border: 1px solid #bababa;
-} // Чекбоксы />
+}
+
+.form-request__field--checkbox:disabled + .form-request__caption--checkbox::before,
+.form-request__field--checkbox:disabled + .form-request__caption--checkbox {
+    opacity: 0.3;
+
+    cursor: default;
+}// Чекбоксы />
 
 .form-request__field {
   padding: 11px 15px;
@@ -259,11 +288,11 @@
 
     &--purpose {
       margin-bottom: 75px;
-      padding-top: 18px;
+      padding-top: 19px;
       padding-left: 27px;
       transform: translateX(0);
 
-      width: 610px;
+      width: 602px;
 
       border: 1px solid #d9d9d9;
     }
@@ -323,7 +352,7 @@
 
   .form-request__caption { // < Радиокнопки
     &--radio {
-      margin-bottom: 16px;
+      margin-bottom: 17px;
 
       padding-left: 60px;
     }

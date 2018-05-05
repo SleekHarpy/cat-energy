@@ -1,6 +1,6 @@
 .how-work__wrapper {
   @include align-mobile;
-  margin-bottom: 28px;
+  margin-bottom: 46px;
 }
 
 .how-work__title {
@@ -99,6 +99,10 @@
   font-weight: 400;
   font-family: $font-arial;
   color: #444444;
+}
+
+.how-work__br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -258,6 +262,10 @@
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .how-work__br {
+    display: block;
   }
 }
 
