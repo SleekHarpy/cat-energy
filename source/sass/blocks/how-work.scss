@@ -33,6 +33,11 @@
       background-position: center;
 
       content: "";
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-leaf@2x.png");
+        background-size: 60px auto;
+      }
     }
   }
 
@@ -51,6 +56,11 @@
       background-position: center;
 
       content: "";
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-powder@2x.png");
+        background-size: 60px auto;
+      }
     }
   }
 
@@ -69,6 +79,11 @@
       background-position: center;
 
       content: "";
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png");
+        background-size: 60px auto;
+      }
     }
   }
 
@@ -87,6 +102,11 @@
       background-position: center;
 
       content: "";
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+        background-size: 60px auto;
+      }
     }
   }
 }

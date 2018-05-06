@@ -109,7 +109,7 @@
 @media (min-width: $tablet-width) {
   .product-card {
     position: relative;
-    margin-top: 139px;
+    margin-top: 138px;
     margin-bottom: 0;
     padding: 163px 37px;
     padding-bottom: 40px;
@@ -131,14 +131,6 @@
     left: 50%;
     bottom: 305px;
     transform: translateX(-50%);
-
-    /*&--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }*/
   }
 
   .product-card__content {
@@ -188,7 +180,7 @@
 
 @media (min-width: $desktop-width) {
   .product-card {
-    margin-top: 138px;
+    margin-top: 140px;
     width: 175px;
   }
 }

@@ -67,7 +67,6 @@
     position: relative;
 
     width: 100%;
-    //min-height: 462px;
 
     background-color: $main-background;
   }
@@ -122,22 +121,6 @@
     display: none;
   }
 
-  /*.comparison__toggle-bar {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 8px;
-    height: 8px;
-
-    background-color: $secondary-bacground;
-    border: 13px solid #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
-
-    cursor: pointer;
-  }*/
-
   .comparison__toggle-bar {
     position: absolute;
     top: -17px;
@@ -184,8 +167,34 @@
 
 @media (min-width: $desktop-width) {
   .comparison {
-    width: 785px;
+    width: 650px;
 
     background: none;
+  }
+
+  .comparison__wrapper {
+    margin: 0;
+
+    width: 100%;
+  }
+
+  .comparison__picture {
+    margin-top: -190px;
+    margin-bottom: 36px;
+  }
+
+  .comparison__image {
+    width: 325px;
+    height: 517px;
+
+    object-fit: none;
+
+    &--before {
+      object-position: -40px 0;
+    }
+  }
+
+  .comparison__scale {
+    margin: 0 auto;
   }
 }

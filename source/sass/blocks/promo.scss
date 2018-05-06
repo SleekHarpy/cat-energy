@@ -12,8 +12,13 @@
 
   background-color: #65a93c;
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .promo__wrapper {
@@ -35,6 +40,11 @@
     background-image: url("../img/index-can-mobile@1x.png");
 
     content: "";
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-mobile@2x.png");
+      background-size: 280px auto;
+    }
   }
 }
 
@@ -98,7 +108,12 @@
       width: 709px;
       height: 609px;
 
-      background-image: url("../img/index-can-tablet.jpg");
+      background-image: url("../img/index-can-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+        background-size: 709px auto;
+      }
     }
   }
 
@@ -148,17 +163,22 @@
     &::before {
       position: absolute;
       top: -175px;
-      right: 41px;
+      right: 71px;
       z-index: -2;
 
       width: 720px;
       height: 696px;
 
       background-color: #64a83b;
-      background-image: url("../img/index-background-desktop.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
 
       content: "";
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 
@@ -176,7 +196,13 @@
       width: 552px;
       height: 499px;
 
-      background-image: url("../img/index-can-desktop.png");
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+        background-size: 552px auto;
+      }
     }
   }
 
