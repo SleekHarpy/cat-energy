@@ -61,6 +61,9 @@
   text-align: center;
 
   &--more {
+    color: #444444;
+    background-color: $main-background;
+
     &:hover {
       background-color: #ebebeb;
     }
@@ -99,11 +102,6 @@
   font-family: $font-arial;
   text-transform: none;
   color: #444444;
-}
-
-.product-card__button--more {
-  color: #444444;
-  background-color: $main-background;
 }
 
 @media (min-width: $tablet-width) {
