@@ -6,6 +6,9 @@
 .comparison__image {
   margin-bottom: 29px;
 
+  width: 320px;
+  height: 240px;
+
   &--after {
     display: none;
   }
@@ -86,6 +89,8 @@
   .comparison__image {
     width: 354px;
     height: 517px;
+
+    margin-bottom: 0;
 
     object-fit: none;
 

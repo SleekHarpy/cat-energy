@@ -34,14 +34,51 @@
   height: 19px;
 }
 
-.social__fill {
+.social__svg-icon {
   fill: #666666;
+
+  &:hover {
+    fill: $secondary-bacground;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
+    padding-top: 3px;
+
+    max-width: 300px;
 
     border-bottom: none;
+  }
+
+  .social__item {
+    margin-right: 20px;
+  }
+
+  .social__link {
+    width: 31px;
+    height: 28px;
+  }
+
+  .social__svg-icon {
+    &--vkontakte {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
   }
 }
