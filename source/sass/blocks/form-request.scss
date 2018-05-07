@@ -187,8 +187,7 @@
 
 // < Чекбоксы
 .form-request__field:focus + .form-request__caption--checkbox::before {
-    border: 1px solid #bababa;
-  }
+  border: 1px solid #bababa;
 }
 
 .form-request__field--checkbox:checked + .form-request__caption--checkbox::before {
