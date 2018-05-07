@@ -40,7 +40,19 @@
 }
 
 .form-request__field {
+  padding: 11px 15px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  text-transform: uppercase;
+
   border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &--width {
+    width: 100%;
+  }
 
   /*&--width { // Скрывает стрелочки у полей с типом "number"
     -moz-appearance: textfield;
@@ -204,20 +216,6 @@
   cursor: default;
 }// Чекбоксы />
 
-.form-request__field {
-  padding: 11px 15px;
-
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  font-family: $font-oswald;
-  text-transform: uppercase;
-
-  &--width {
-    width: 100%;
-  }
-}
-
 .form-request__title {
   margin-bottom: 18px;
   font-size: 24px;
@@ -345,10 +343,8 @@
     &--phone {
       width: 110px;
     }
-  }
 
-  .form-request__caption { // < Радиокнопки
-    &--radio {
+    &--radio { // < Радиокнопки
       margin-bottom: 17px;
 
       padding-left: 60px;
@@ -359,11 +355,9 @@
 
       width: 40px;
       height: 40px;
-    }
-  } // радиокнопки />
+    } // радиокнопки />
 
-  .form-request__caption { // < Чекбоксы
-    &--checkbox {
+    &--checkbox { // < Чекбоксы
       margin-bottom: 20px;
       padding-left: 59px;
     }
@@ -452,10 +446,8 @@
     &--additionally {
       width: 1220px;
     }
-  }
 
-  .form-request__item { // < Радиокнопки
-    &--purpose {
+    &--purpose { // < Радиокнопки
       margin-top: 19px;
       margin-bottom: 70px;
       width: 540px;
