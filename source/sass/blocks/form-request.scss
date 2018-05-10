@@ -5,7 +5,7 @@
   border: none;
 
   &--information {
-    margin-bottom: 9px;
+    margin-bottom: 7px;
   }
 
   &--purpose {
@@ -21,7 +21,7 @@
   }
 
   &--contacts {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   &--comment {
@@ -34,9 +34,29 @@
 }
 
 .form-request__align {
-  margin: 15px 0;
+  margin: 17px 0;
   display: flex;
   align-items: baseline;
+
+  &--contacts {
+    position: relative;
+  }
+}
+
+.form-request__icon {
+  fill: #222222;
+
+  &--mail {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+  }
+
+  &--phone {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+  }
 }
 
 .form-request__field {
@@ -77,6 +97,14 @@
     outline: 2px solid #ff8282;
     outline-offset: -2px;
   }
+}
+
+.form-request__field:invalid ~ .form-request__icon {
+  fill: #ff8282;
+}
+
+.form-request__field:valid:focus ~ .form-request__icon {
+  fill: $secondary-bacground;
 }
 
 .form-request__caption {
@@ -277,13 +305,13 @@
 
   .form-request__item {
     &--information {
-      margin-bottom: 57px;
+      margin-bottom: 54px;
 
       border-bottom: none;
     }
 
     &--purpose {
-      margin-bottom: 75px;
+      margin-bottom: 73px;
       padding-top: 19px;
       padding-left: 27px;
       transform: translateX(0);
@@ -294,7 +322,7 @@
     }
 
     &--contacts {
-      margin-bottom: 62px;
+      margin-bottom: 63px;
     }
 
     &--comment {
@@ -311,6 +339,10 @@
 
     font-size: 36px;
     line-height: 36px;
+
+    &--contacts {
+      margin-bottom: 58px;
+    }
 
     &--comment {
       margin-bottom: 74px;
@@ -399,6 +431,18 @@
     }
   }
 
+  .form-request__icon {
+    &--mail {
+      top: 21px;
+      right: 23px;
+    }
+
+    &--phone {
+      top: 18px;
+      right: 21px;
+    }
+  }
+
   .form-request__checkbox {
     width: 286px;
 
@@ -440,17 +484,24 @@
       margin-bottom: 50px;
     }
 
+    &--contacts {
+      margin-bottom: 65px;
+    }
+
     &--comment {
+      margin-bottom: 64px;
       width: 1220px;
     }
 
     &--additionally {
+      margin-bottom: 32px;
+
       width: 1220px;
     }
 
     &--purpose { // < Радиокнопки
-      margin-top: 19px;
-      margin-bottom: 70px;
+      margin-top: 12px;
+      margin-bottom: 68px;
       width: 540px;
     }
   }
@@ -487,8 +538,24 @@
     width: 1188px;
   }
 
+  .form-request__checkbox {
+    margin-right: 80px;
+
+    width: 245px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
   .form-request_button {
     margin-right: 80px;
+
     width: 570px;
   }
 

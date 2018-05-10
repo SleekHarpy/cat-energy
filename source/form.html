@@ -64,15 +64,21 @@
               </p>
             </fieldset>
             <fieldset class="form-request__item form-request__item--contacts">
-              <legend class="form-request__title form-request__title--green-line">Контактные данные (владельца кота)</legend>
+              <legend class="form-request__title form-request__title--contacts">Контактные данные (владельца кота)</legend>
               <div class="form-request__wrapper form-request__wrapper--contacts">
                 <p class="form-request__align form-request__align--contacts">
                   <label class="form-request__caption form-request__caption--email" for="e-mail">e-mail:*</label>
                   <input class="form-request__field  form-request__field--width" id="e-mail" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                  <svg class="form-request__icon form-request__icon--mail" width="17" height="13">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
                 </p>
                 <p class="form-request__align form-request__align--contacts">
                   <label class="form-request__caption form-request__caption--phone" for="phone">Телефон:*</label>
                   <input class="form-request__field  form-request__field--width" id="phone" type="tel" name="phone" placeholder="8(960)900-60-90" required>
+                  <svg class="form-request__icon form-request__icon--phone" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </p>
               </div>
             </fieldset>
@@ -82,7 +88,7 @@
             </fieldset>
             <fieldset class="form-request__item form-request__item--additionally">
               <legend class="form-request__title form-request__title--additionally">Дополнительно</legend>
-              <div class="form-request__wrapper">
+              <div class="form-request__wrapper form-request__wrapper--additionally">
                 <p class="form-request__checkbox">
                   <input class="form-request__field form-request__field--checkbox visually-hidden" id="sweetener" type="checkbox" name="additionally" value="sweetener" checked>
                   <label class="form-request__caption form-request__caption--checkbox" for="sweetener">Сахарозаменитель</label>
