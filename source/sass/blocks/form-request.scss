@@ -97,6 +97,18 @@
     outline: 2px solid #ff8282;
     outline-offset: -2px;
   }
+
+  &::-ms-clear { //Скрывает крестик в input в ie
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  &::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
 }
 
 .form-request__field:invalid ~ .form-request__icon {
@@ -246,12 +258,17 @@
 }// Чекбоксы />
 
 .form-request__title {
+  position: relative;
   margin-bottom: 18px;
+  padding-right: 24px;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   font-family: $font-oswald;
   color: #111111;
+
+  background-color: #ffffff;
 
   &--comment {
     margin-bottom: 35px;
@@ -259,6 +276,27 @@
 
   &--additionally {
     margin-bottom: 25px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 14px;
+    height: 3px;
+
+    width: 100vw;
+
+    background-color: $secondary-bacground;
+
+    z-index: -1;
+    content: "";
+  }
+
+  &--contacts {
+    &::after {
+      transform: translateX(46px);
+
+      z-index: 2;
+    }
   }
 }
 
@@ -273,6 +311,16 @@
   font-family: $font-oswald;
   text-transform: uppercase;
   color: #444444;
+
+  border: 1px solid #d9d9d9;
+
+  &:hover {
+     border: 1px solid #cdcdcd;
+   }
+
+   &:focus {
+     outline: 2px solid #444444;
+   }
 }
 
 .form-request_button {
@@ -336,9 +384,14 @@
 
   .form-request__title {
     margin-bottom: 60px;
+    margin-left: -39px;
+    padding-left: 39px;
+    padding-right: 39px;
 
     font-size: 36px;
     line-height: 36px;
+
+    background-color: #ffffff;
 
     &--contacts {
       margin-bottom: 58px;
@@ -350,6 +403,25 @@
 
     &--additionally {
       margin-bottom: 52px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 22px;
+      right: 0;
+      transform: translateX(-23px);
+      height: 3px;
+
+      width: 100vw;
+
+      background-color: $secondary-bacground;
+
+      z-index: -1;
+      content: "";
+    }
+
+    &::after {
+      top: 22px;
     }
   }
 
@@ -404,6 +476,8 @@
   }
 
   .form-request__field {
+    min-height: 30px; // для firefox
+
     font-size: 20px;
     line-height: 20px;
   }

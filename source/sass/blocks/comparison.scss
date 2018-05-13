@@ -53,14 +53,18 @@
   border-bottom: 1px solid transparent;
 
   cursor: pointer;
+
+  &:hover {
+    border-bottom: $border-bottom;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 }
 
-.comparison__toggle:hover {
-  border-bottom: $border-bottom;
-}
+.comparison__toggle {
 
-.comparison__toggle:active {
-  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -70,6 +74,18 @@
     width: 100%;
 
     background-color: $main-background;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+
+      background-color: #eaeaea;
+
+      content: "";
+    }
   }
 
   .comparison__wrapper {
@@ -102,6 +118,21 @@
       object-position: right;
 
       display: block;
+    }
+  }
+
+  @media (-ms-high-contrast: active), (-ms-high-contrast: none) { // Для ie
+    /* IE10+ specific styles go here */
+    .comparison__picture {
+      width: 354px;
+      overflow: hidden;
+    }
+    .comparison__image {
+      width: 690px;
+
+      &--after {
+        margin-left: -340px;
+      }
     }
   }
 
@@ -166,6 +197,10 @@
     width: 650px;
 
     background: none;
+
+    &::before {
+      width: calc(49.49vw - 50%);
+    }
   }
 
   .comparison__wrapper {
@@ -187,6 +222,25 @@
 
     &--before {
       object-position: -40px 0;
+    }
+  }
+
+  @media (-ms-high-contrast: active), (-ms-high-contrast: none) { // Для ie
+    /* IE10+ specific styles go here */
+    .comparison__picture {
+      width: 325px;
+      overflow: hidden;
+    }
+    .comparison__image {
+      width: 690px;
+
+      &--before {
+        margin-left: -40px;
+      }
+
+      &--after {
+        margin-left: -365px;
+      }
     }
   }
 

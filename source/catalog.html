@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="header">
       <div class="header__wrapper">
@@ -45,7 +49,7 @@
               </picture>
             </a>
             <div class="product-card__content">
-              <h3 class="product-card__title"><a class="product-card__link" href="#" name="cat-energy-pro">Cat Energy Pro 500 г</a></h3>
+              <h3 class="product-card__title"><a class="product-card__link" href="#" id="cat-energy-pro">Cat Energy Pro 500 г</a></h3>
               <table class="product-card__info">
                 <tr>
                   <td class="product-card__value">Объём</td>
@@ -57,7 +61,7 @@
                 </tr>
                 <tr>
                   <td class="product-card__value">Цена</td>
-                  <td class="product-card__value product-card__value--right">700 р</td>
+                  <td class="product-card__value product-card__value--right">700 Р.</td>
                 </tr>
               </table>
             </div>
@@ -169,7 +173,7 @@
               </picture>
             </a>
             <div class="product-card__content">
-              <h3 class="product-card__title"><a class="product-card__link" href="#" name="cat-energy-slim">Cat Energy Slim 500 г</a></h3>
+              <h3 class="product-card__title"><a class="product-card__link" href="#" id="cat-energy-slim">Cat Energy Slim 500 г</a></h3>
               <table class="product-card__info">
                 <tr>
                   <td class="product-card__value">Объём</td>
@@ -325,17 +329,19 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <section class="footer__logo">
+          <h2 class="visually-hidden">Логотип сайта</h2>
           <a class="footer__link" href="index.html">
-            <img class="footer__logo-image" src="../img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+            <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
         </section>
         <section class="footer__social social">
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в Вконтакте</span>
                 <svg class="social__svg-icon social__svg-icon--vkontakte" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
@@ -343,7 +349,7 @@
               <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
                 <span class="visually-hidden">Мы в Инстаграме</span>
                 <svg class="social__svg-icon social__svg-icon--instagram" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon-inst"></use>
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -351,18 +357,19 @@
               <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="social__svg-icon social__svg-icon--facebook" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </section>
         <section class="footer__copyright copyright">
+          <h2 class="visually-hidden">Логотип студии разработавшей сайт</h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
             <div class="copyright__logo">
               <svg class="copyright__svg-icon" width="27" height="34">
-                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+                <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </div>
           </a>
@@ -371,7 +378,8 @@
     </footer>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCidHjv9mtVlHd5Fbr8371vHr1oXgh9owM&callback=initMap"></script>
-    <script src="js/map.js"></script>
+    <script src="js/map.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
 
   </body>
 </html>
