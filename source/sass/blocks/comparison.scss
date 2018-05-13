@@ -63,10 +63,6 @@
   }
 }
 
-.comparison__toggle {
-
-}
-
 @media (min-width: $tablet-width) {
   .comparison {
     position: relative;
@@ -127,6 +123,7 @@
       width: 354px;
       overflow: hidden;
     }
+
     .comparison__image {
       width: 690px;
 
@@ -231,6 +228,7 @@
       width: 325px;
       overflow: hidden;
     }
+
     .comparison__image {
       width: 690px;
 
