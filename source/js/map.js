@@ -12,6 +12,6 @@ function initMap()
   var marker = new google.maps.Marker({
     position: {lat: 59.9387942, lng: 30.3230833},
     map: mainMap,
-    icon: "img/map-pin.png"
+    icon: "../../img/map-pin.png"
   });
 }
