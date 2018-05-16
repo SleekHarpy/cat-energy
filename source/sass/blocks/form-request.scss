@@ -111,7 +111,7 @@
   }
 }
 
-.form-request__field:invalid ~ .form-request__icon {
+.form-request__field:focus:invalid ~ .form-request__icon {
   fill: #ff8282;
 }
 
