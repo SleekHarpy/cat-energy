@@ -63,9 +63,8 @@
 
 @media (min-width: $desktop-width) {
   .address {
-    position: absolute;
-    top: 95px;
-    left: 40px;
+    position: relative;
+    margin-left: 0;
     padding-top: 64px;
     padding-right: 90px;
     padding-bottom: 56px;

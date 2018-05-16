@@ -33,13 +33,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .location__wrapper {
+  .location {
     position: relative;
+    padding-top: 95px;
+    padding-bottom: 108px;
+  }
+
+  .location__wrapper {
+    padding-left: 80px;
 
     width: 1300px;
   }
 
   .location__map {
-    min-height: 401px; // Для google карт
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
   }
 }
