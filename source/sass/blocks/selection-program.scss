@@ -1,3 +1,7 @@
+.selection-program {
+  overflow-x: hidden;
+}
+
 .selection-program__wrapper {
   @include align-mobile;
 }
@@ -22,9 +26,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .selection-program {
+    margin-bottom: 39px;
+  }
+
   .selection-program__wrapper {
     padding: 0 30px;
-    padding-bottom: 75px;
+    padding-bottom: 20px;
 
     width: 708px;
   }
@@ -39,7 +47,7 @@
 
   .selection-program__description {
     margin-left: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 
     width: 330px;
 
@@ -49,6 +57,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .selection-program {
+    margin-bottom: 72px;
+  }
+
   .selection-program__wrapper {
     padding: 0 40px;
 
@@ -57,5 +69,10 @@
 
   .selection-program__description {
     margin-left: 0;
+    margin-bottom: 52px;
+  }
+
+  .selection-program__title {
+    margin-top: 13px;
   }
 }

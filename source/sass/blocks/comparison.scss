@@ -1,92 +1,17 @@
-/*.comparison__wrapper {
-  width: 60vw;
-  height: 60vw;
-  max-width: 600px;
-  max-height: 600px;
-  overflow: hidden;
-}
-
-.comparison__image {
-  background-image: url("../img/after-mobile@1x.png");
-  background-size: cover;
-  position: relative;
-  font-size: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.comparison__divisor {
-  background-image: url("../img/before-mobile@1x.png");
-  background-size: cover;
-  position: absolute;
-  width: 50%;
-  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
-  overflow: hidden;
-  bottom: 0;
-  height: 100%;
-}
-
-input[type=range]{
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  position: relative;
-  top: -2rem; left: -2%;
-  background-color: rgba(255,255,255,0.1);
-  width: 102%;
-}
-
-input[type=range]:focus {
-  outline: none;
-}
-
-input[type=range]:active {
-  outline: none;
-}
-
-input[type=range]::-moz-range-track {
-  -moz-appearance:none;
-    height:15px;
-    width: 98%;
-    background-color: rgba(255,255,255,0.1);
-    position: relative;
-    outline: none;
- }
-
-input[type=range]:active {
-  border: none;
-  outline: none;
-}
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance:none;
-    width: 20px; height: 15px;
-    background: #fff;
-    border-radius: 0;
-}
-
-input[type=range]::-moz-range-thumb {
-  -moz-appearance: none;
-  width: 20px;
-  height: 15px;
-  background: #fff;
-  border-radius: 0;
-     }
-
-input[type=range]:focus::-webkit-slider-thumb {
-    background: rgba(255,255,255,0.5);
-   }
-
-input[type=range]:focus::-moz-range-thumb {
-    background: rgba(255,255,255,0.5);
-  }*/
-
 .comparison__wrapper {
   padding-bottom: 36px;
   width: 280px;
 }
 
 .comparison__image {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+
+  width: 280px;
+  height: 240px;
+
+  &--after {
+    display: none;
+  }
 }
 
 .comparison__range-colrols {
@@ -124,6 +49,18 @@ input[type=range]:focus::-moz-range-thumb {
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
+
+  border-bottom: 1px solid transparent;
+
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: $border-bottom;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -131,18 +68,74 @@ input[type=range]:focus::-moz-range-thumb {
     position: relative;
 
     width: 100%;
-    min-height: 462px;
 
     background-color: $main-background;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+
+      background-color: #eaeaea;
+
+      content: "";
+    }
   }
 
   .comparison__wrapper {
+    position: relative;
     margin: 0 auto;
 
+    display: flex;
+    flex-wrap: wrap;
     width: 708px;
   }
 
+  .comparison__picture {
+    margin-top: -170px;
+    margin-bottom: 16px;
+  }
+
+  .comparison__image {
+    width: 354px;
+    height: 517px;
+
+    margin-bottom: 0;
+
+    object-fit: none;
+
+    &--before {
+      object-position: 18px 0;
+    }
+
+    &--after {
+      object-position: right;
+
+      display: block;
+    }
+  }
+
+  @media (-ms-high-contrast: active), (-ms-high-contrast: none) { // Для ie
+    /* IE10+ specific styles go here */
+    .comparison__picture {
+      width: 354px;
+      overflow: hidden;
+    }
+
+    .comparison__image {
+      width: 690px;
+
+      &--after {
+        margin-left: -340px;
+      }
+    }
+  }
+
   .comparison__range-colrols {
+    margin-bottom: 32px;
+
     width: 570px;
   }
 
@@ -161,24 +154,95 @@ input[type=range]:focus::-moz-range-thumb {
 
   .comparison__toggle-bar {
     position: absolute;
-    top: -14px;
+    top: -17px;
     left: 50%;
     transform: translateX(-50%);
-    width: 8px;
-    height: 8px;
 
-    background-color: $secondary-bacground;
-    border: 13px solid #ffffff;
+    width: 34px;
+    height: 34px;
+
+    background-color: rgb(104, 183, 56);
+    box-shadow: inset 0 0 0 12px rgb(255, 255, 255), 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 1px solid #cdcdcd;
     border-radius: 50%;
 
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 12px rgb(255, 255, 255), 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border-color: rgb(104, 183, 56);
+      box-shadow: inset 0 0 0 1px rgb(104, 183, 56), inset 0 0 0 12px rgb(255, 255, 255), 0 4px 5px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .comparison__toggle {
+    padding-bottom: 5px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    border-bottom: 1px dotted #dcdcdc;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comparison {
-    width: 785px;
+    width: 650px;
 
     background: none;
+
+    &::before {
+      width: calc(49.49vw - 50%);
+    }
+  }
+
+  .comparison__wrapper {
+    margin: 0;
+
+    width: 100%;
+  }
+
+  .comparison__picture {
+    margin-top: -190px;
+    margin-bottom: 36px;
+  }
+
+  .comparison__image {
+    width: 325px;
+    height: 517px;
+
+    object-fit: none;
+
+    &--before {
+      object-position: -40px 0;
+    }
+  }
+
+  @media (-ms-high-contrast: active), (-ms-high-contrast: none) { // Для ie
+    /* IE10+ specific styles go here */
+    .comparison__picture {
+      width: 325px;
+      overflow: hidden;
+    }
+
+    .comparison__image {
+      width: 690px;
+
+      &--before {
+        margin-left: -40px;
+      }
+
+      &--after {
+        margin-left: -365px;
+      }
+    }
+  }
+
+  .comparison__scale {
+    margin: 0 auto;
   }
 }

@@ -1,5 +1,5 @@
 .stats {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .stats__description {
@@ -62,13 +62,17 @@
 
 @media (min-width: $desktop-width) {
   .stats {
+    margin: 0;
+    margin-left: 40px;
     padding: 55px 0;
 
-    width: 435px;
+    width: 610px;
   }
 
   .stats__description {
-    margin-bottom: 62px;
+    margin-bottom: 58px;
+
+    width: 435px;
   }
 
   .stats__cost {

@@ -15,13 +15,28 @@
   text-align: center;
 
   border-bottom: $border-bottom;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--active {
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     padding: 0 30px;
-    padding-top: 60px;
-    padding-bottom: 62px;
+    padding-top: 58px;
+    padding-bottom: 45px;
 
     display: flex;
     justify-content: space-between;
@@ -29,6 +44,8 @@
   }
 
   .footer__logo {
+    padding-top: 7px;
+
     width: 192px;
   }
 
@@ -43,7 +60,9 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper {
-    padding: 60px 40px;
+    padding: 0 40px;
+    padding-top: 56px;
+    padding-bottom: 45px;
     width: 1220px;
   }
 }

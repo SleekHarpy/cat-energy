@@ -1,3 +1,9 @@
+.location {
+  &--background {
+    background-color: $main-background;
+  }
+}
+
 .location__wrapper {
   margin: 0 auto;
 
@@ -14,14 +20,6 @@
   margin: 0 auto;
 
   display: block;
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,16 +29,6 @@
 
   .location__map {
     min-height: 396px; // Для google карт
-  }
-
-  .location__map-image {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
   }
 }
 
@@ -53,15 +41,5 @@
 
   .location__map {
     min-height: 401px; // Для google карт
-  }
-
-  .location__map-image {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
   }
 }

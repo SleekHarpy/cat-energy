@@ -11,10 +11,27 @@
   font-family: $font-arial;
   color: #444444;
   text-decoration: none;
+
+  fill: #666666;
+
+  &:hover {
+    fill: $secondary-bacground;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .copyright {
+    padding-left: 29px;
+
+    width: 163px;
+  }
+
   .copyright__link {
+    margin: auto 0;
     padding: 0;
   }
 }
