@@ -1,0 +1,1 @@
+function initMap(){var n=document.querySelector(".location__map"),o=new google.maps.Map(n,{zoom:17,center:{lat:59.9387942,lng:30.3230833},disableDefaultUI:!0});new google.maps.Marker({position:{lat:59.9387942,lng:30.3230833},map:o,icon:"img/pin.png"})}
